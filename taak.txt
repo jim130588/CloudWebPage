@@ -1,0 +1,67 @@
+Projectopdracht “Cloudsystemen 25-26”
+Voor dit project zet je een website op. Hiervoor gebruik je alle technieken die aan bod kwamen in de les:
+
+•	Je gebruikt een cloudprovider die een Linux-VM voorziet (zoals Azure of een Hetzner VPS)
+•	Je linkt een domeinnaam aan deze VM. Dit mag met een (gratis) online service (zoals https://freedns.afraid.org/ of http://duckdns.org/)
+•	Hierop komt er een webservice die server-side rendering doet én die in een Docker-container werkt
+◦	Bv een Javascript-react applicatie, een PHP applicatie, …
+◦	De exacte inhoud is niet belangrijk
+•	Een reverse proxy handelt het binnenkomend verkeer af en zorgt ervoor dat dit naar de juiste service/container gaat. (Bv: Traefik, Caddy of Nginx)
+•	Je zorgt voor SSL (aka HTTPS). De reverse proxy mag dit regelen. Hiervoor gebruik je een ACME-compatibele provider, zoals Let’s encrypt
+•	Alle relevante bestanden (broncode applicatie, Dockerfiles, …) zitten in één of meerdere Git-repositories. Deze zijn online beschikbaar via Github, Codeberg.org of een gelijkaardige service
+◦	Tot de deadline moet je repository ‘private’ zijn. Zet deze de dag van de deadline op public
+◦	Zorg ervoor dat ‘pietervdvn’ een contributor is van je repository.
+•	In je verslag geef je een korte toelichting waarom je voor deze repo-provider koos en beantwoord je ook de politieke vragen.
+•	Kies een licentie voor repository. In het verslag licht je deze keuze toe, oa adhv de voorbeeldvragen.
+•	Je zet Actions op: wanneer je een wijziging pusht naar je repo, dan moet een workflow in gang schieten en vanzelf de laatste versie van je website bouwen en deployen.
+
+Template
+Vul de volgende samenvatting aan
+Hosting	Azure/Hetzner/	1
+IP-address host		1
+Domeinnaam		1
+Provider DNS	AfraidDNS/Duck/	0.5
+Git-repository (URL)		3
+Gekozen licentie		3
+Reverse proxy: technologie	Traefik/Caddy/NGinx/	3
+
+Maximaal enkele zinnen per vraag. Je hoeft geen volzinnen te schrijven, een droog antwoord is ook goed.
+Hosting-provider
+•	Wat is het bedrijf achter je hosting?
+•	Waar staan de servers staan die je data hosten?
+•	Welke alternatieven bekeek je? (Minstens 1)
+•	Waarom koos je deze hosting-provider?
+Repository-host
+•	Welke repository-hosting-provider koos je? Waarom?
+•	Waar staan de (fysieke) servers staan die je data hosten?
+•	Welk bedrijf is eigenaar van deze repo?
+•	Welke rechten eigent dit bedrijf zichzelf toe-eigent over je code?
+•	Hoe verdient dit bedrijf geld aan deze service?
+•	Wat is je backup-plan is indien dit bedrijf niet meer beschikbaar zou zijn?
+Repository-licentie
+•	Welke licentie koos je?
+•	wat mogen anderen met je code doen?
+•	wat zijn de plichten van de anderen die je code hergebruiken (bv: bronvermelding? Share alike? …)?
+•	welke andere licentie(s) je overwoog en waarom? (Minstens 1 – maximaal 3)
+•	waarom koos je uiteindelijk voor deze licentie?
+Reverse proxy
+•	Wat is de licentie van de reverse proxy broncode? Welke rechten heb je dus?
+•	Waar kan je de broncode van de reverse proxy vinden? Zet hier de link
+Certificaat
+•	Welk bedrijf heeft je SSL-certificaat gemaakt?
+•	Is dit bedrijf een VZW, een bedrijf dat op winst uit is of nog iets anders?
+•	Hoelang is je certificaat geldig?
+•	Welke nationaliteit heeft de certificate-authority die je een certificaat gaf?
+
+Actions
+	Zorg ervoor dat er minstens één geslaagde deploy is in je repo
+•	Beschrijf kort hoe je script werkt
+•	Wie heeft er betaald voor de computertijd van je Actions?
+Studiebelasting
+De volgende vragen zijn redelijk vrij. Je krijgt dus je punten als je iets deftig invult
+•	Wat was je grootste struikelblok?
+•	Wat ging vlotter dan verwacht?
+•	Wat ga je de volgende keer anders aanpakken?
+•	Welke technologie ga je opnieuw gebruiken? Waarom?
+•	Welke technologie ga je niet meer gebruiken? Waarom? Wat ga je in de plaats gebruiken (of weet je dit nog niet)?
+•	Hoeveel uur had je ongeveer nodig voor dit project?
