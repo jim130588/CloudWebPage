@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Noeka</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/d&d.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <nav>  
+            <a href="index.html">Home</a>
+            <a href="stream.html">Stream</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="dnd.html" class="active">D&D</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to D&D Archive</h1>
+        <form action="submit" method="post" class="form">
+            <label for="firstOption">First Selection Options</label>
+            <select id="firstOption" class="firstOption">
+                <option value="loading">Loading...</option>
+            </select>
+        </form>
+        
+        <form action="submit" method="post" class="form">
+            <label for="secondOption">Second Selection Option</label>
+            <select id="secondOption" class="secondOption">
+                <option value="loading">Loading...</option>
+            </select>
+        </form>
+        <section class="main">
+            <article class="left">
+                <img src="" alt="" id="apiImg" height="400px">
+            </article>
+            <article class="right">
+                <div>
+                    <h1 id="apiName"></h1>
+                    <div id="apiStats"></div> <!-- Dit is waar de monsterstatistieken worden getoond -->
+                </div>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <h2>Socials</h2>
+        <ul>
+            <li>
+                <a href="https://discord.gg/d6qT7u3h" name="invite link discord">
+                    <img src="/assets/discord-logo.png" alt="Discord" width="50px" height="50px">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitch.tv/noeka3">
+                    <img src="/assets/twitch-logo.png" alt="Twitch" width="50px" height="50px">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/jimmynoeka/">
+                    <img src="/assets/instagram-logo.png" alt="Instagram" width="50px" height="50px">
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <footer>
+        <h2>Noeka3 Recommends These Streamers</h2>
+        <section>
+            <a href="https://www.twitch.tv/pede85">
+                <img src="/assets/pede-profile_image-300x300.jpeg" alt="Pede" width="300px" height="300px">
+            </a>
+            <a href="https://www.twitch.tv/krugervandebuurt">
+                <img src="/assets/kruger-profile_image-300x300.png" alt="Krugervandebuurt" width="300px" height="300px">
+            </a>
+            <a href="https://www.twitch.tv/macianone">
+                <img src="/assets/macianone-profile_image-300x300.png" alt="Macianone" width="300px" height="300px">
+            </a>
+            <a href="https://www.twitch.tv/cptcrunch85">
+                <img src="/assets/cptcrunch85-profile_image-300x300.png" alt="CptCrunch85" width="300px" height="300px">
+            </a>
+        </section>
+    </footer>
+</body>
+</html>
