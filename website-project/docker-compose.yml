@@ -10,7 +10,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro   # Traefik krijgt info van Docker
       - ./traefik.yml:/etc/traefik/traefik.yml        # hoofdconfiguratie
-      - ./letsencrypt:/letsencrypt                     # SSL cert storage
+      - ./letsencrypt/acme.json:/letsencrypt/acme.json                     # SSL cert storage
     restart: unless-stopped
     networks:
       - web
