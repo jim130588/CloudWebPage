@@ -27,6 +27,9 @@ services:
       - "traefik.http.routers.website.entrypoints=websecure"
       - "traefik.http.routers.website.tls.certresolver=letsencrypt"
       - "traefik.http.routers.website.tls=true"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+      - "traefik.http.routers.website.middlewares=redirect-to-https"
+
     restart: unless-stopped
     networks:
       - web
