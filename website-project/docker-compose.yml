@@ -5,12 +5,12 @@ services:
     image: traefik:v2.10
     container_name: traefik
     ports:
-      - "80:80"
-      - "443:443"
+      - "80:80"     # HTTP
+      - "443:443"   # HTTPS
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock:ro
-      - ./traefik.yml:/etc/traefik/traefik.yml
-      - ./acme.json:/acme.json
+      - /var/run/docker.sock:/var/run/docker.sock:ro   # Traefik krijgt info van Docker
+      - ./traefik.yml:/etc/traefik/traefik.yml        # hoofdconfiguratie
+      - ./acme.json:/letsencrypt/acme.json            # SSL cert storage
     restart: unless-stopped
     networks:
       - web
@@ -19,13 +19,13 @@ services:
     image: nginx:alpine
     container_name: noeka-website
     volumes:
-      - ./website-content:/usr/share/nginx/html
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - "./web:/usr/share/nginx/html"     # Zorg dat pad exact klopt
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf   # custom nginx config
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.website.rule=Host(`noeka.duckdns.org`)"
+      - "traefik.http.routers.website.rule=Host(`noeka.duckdns.org`)" # je domein
       - "traefik.http.routers.website.entrypoints=websecure"
-      - "traefik.http.routers.website.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.website.tls.certresolver=letsencrypt"    # TLS via ACME
       - "traefik.http.routers.website.tls=true"
     restart: unless-stopped
     networks:

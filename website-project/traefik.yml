@@ -16,8 +16,8 @@ entryPoints:
 certificatesResolvers:
   letsencrypt:
     acme:
-      email: jouw-email@gmail.com  # Vervang met je e-mail
-      storage: acme.json
+      email: jimmywytynck@gmail.com  # Vervang met je e-mail
+      storage: /letsencrypt/acme.json
       httpChallenge:
         entryPoint: web
 
@@ -27,4 +27,4 @@ providers:
     exposedByDefault: false
 
 log:
-  level: INFO
+  level: DEBUG
