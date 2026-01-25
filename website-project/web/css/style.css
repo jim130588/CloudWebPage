@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* root */
+:root{
+    --primary-color: rgb(18,18,18);
+    --secondary-color: rgb(29, 27, 27);
+    --tertiary-color: rgb(63, 2, 2);
+    --link-color:rgb(22, 158, 4);
+}
+
+html,
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../assets/Grote-wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:var(--primary-color) ;
+    min-height: 100vh;
+    width: 100%;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "main main aside"
+    "footer footer footer";
+}
+
+/*  algemeen    */
+
+h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+#dateTime{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+p{
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    text-align: justify;
+}
+
+a{
+    color: var(--primary-color);
+}
+
+a:hover{
+    color: var(--link-color);
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    color: rgb(207, 206, 206);
+}
+
+nav a:hover,
+.active{
+    font-size: 1.3rem;
+    color: var(--link-color);
+}
+
+.left{
+    flex: 2;
+    padding: 3rem;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.right{
+    flex: 1;
+    padding: 3rem;
+    margin-top: -3rem;
+}
+
+.highlight {
+    background-color: rgba(255, 255, 0, 0.411);
+    font-weight: bold;
+}
+
+/*      nav     */
+
+header{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../assets/Grote-banner.jpg);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 60%;
+    margin-left: 20%;
+}
+
+/*      main        */
+
+main{
+    grid-area: main;
+    max-width: 100rem;
+    margin: auto;
+    padding: 3rem 6rem 1rem 5rem;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+/* Stijlen voor D&D readout */
+
+.skills-list {
+    list-style-type: none;  /* Remove bullet points */
+    padding: 0;             /* Remove padding */
+    margin: 0;              /* Remove margin */
+}
+
+.skills-list li {
+    display: inline-block;  /* Make list items inline */
+    margin-right: 10px;     /* Add some spacing between items */
+}
+
+.h2Dend{
+    margin: 1rem;
+}
+
+.dendCard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(90%);
+    padding: 15px;
+    margin-bottom: 2rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Algemeen centreren voor niet-specifieke content */
+    transition: transform 0.3s;
+}
+
+/* Stijlen voor het formulier */
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.firstOption{
+    background-color: aqua;
+    border: dotted 1px red;
+}
+
+.secondOption {
+    display: block; /* Zorg ervoor dat het zichtbaar is */
+    width: auto; /* Pas breedte aan naar behoefte */
+}
+
+.schedule{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.schedule li{
+    margin: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.schedule li p {
+    text-align: center;
+    color: antiquewhite;
+    margin: 1rem;
+    margin-bottom: -3rem;
+    z-index: 2;
+    position: relative;
+}
+
+.schedule li img{
+    z-index: 1;
+    position: relative;
+}
+
+/*      aside       */
+
+aside{
+    grid-area: aside;
+    margin: 5rem;
+    margin-top: 9rem;
+    text-align: center;
+}
+
+aside ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+aside img{
+    width: 100px;
+    height: auto;
+}
+
+/*      footer      */
+
+footer{
+    grid-area: footer;
+    text-align: center;
+}
+
+footer h2{
+    color: antiquewhite;
+}
+
+footer section{
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+    justify-content: center;
+}
+
+footer section img{
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-areas: 
+      "nav nav nav"
+      "main main aside"
+      "footer footer footer";
+  }
+  .main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    }
+    .right{
+    background-color:rgba(222, 184, 135, 0.123);   
+    }
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    display: grid;
+    grid-template-areas: 
+      "nav nav nav"
+      "main main main"
+      "aside aside aside"
+      "footer footer footer";
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    display: grid;
+    grid-template-areas: 
+      "nav nav nav"
+      "main main main"
+      "aside aside aside"
+      "footer footer footer";
+  }
+}

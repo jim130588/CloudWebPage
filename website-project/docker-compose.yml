@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  traefik:
+    image: traefik:v2.10
+    container_name: traefik
+    ports:
+      - "80:80"     # HTTP
+      - "443:443"   # HTTPS
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro   # Traefik krijgt info van Docker
+      - ./traefik.yml:/etc/traefik/traefik.yml        # hoofdconfiguratie
+      - ./letsencrypt/acme.json:/letsencrypt/acme.json                     # SSL cert storage
+    restart: unless-stopped
+    networks:
+      - web
+
+  website:
+    image: nginx:alpine
+    container_name: noeka-website
+services:
+  website:
+    image: nginx:alpine
+    container_name: noeka-website
+    volumes:
+      - "./web:/usr/share/nginx/html"
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.website.rule=Host(`jimmy-cloud.duckdns.org`)"
+      - "traefik.http.routers.website.entrypoints=websecure"
+      - "traefik.http.routers.website.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.website.tls=true"
+      # Belangrijk: dit zorgt dat Traefik de HTTP-01 challenge pakt
+      - "traefik.http.routers.website-http.rule=Host(`jimmy-cloud.duckdns.org`)"
+      - "traefik.http.routers.website-http.entrypoints=web"
+      - "traefik.http.routers.website-http.middlewares=redirect-to-https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+
+
+    restart: unless-stopped
+    networks:
+      - web
+
+networks:
+  web:
+    driver: bridge

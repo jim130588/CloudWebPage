@@ -1,0 +1,27 @@
+name: Deploy to Hetzner
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: 46.224.155.140    # Jouw Hetzner server IP
+          username: root           # SSH gebruiker
+          key: ${{ secrets.SSH_PRIVATE_KEY }}  # CORRECTE SECRET NAAM
+          script: |
+            # Ga naar de hoofdmap van de repository en haal nieuwe wijzigingen op
+            cd /opt/CloudWebPage
+            git pull origin main
+            # Ga naar de docker-compose map en herstart de containers
+            cd /opt/CloudWebPage/website-project
+            docker-compose down
+            docker-compose up -d --build

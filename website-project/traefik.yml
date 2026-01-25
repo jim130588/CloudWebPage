@@ -1,0 +1,27 @@
+# traefik.yml
+api:
+  dashboard: true
+  insecure: true  # Alleen voor testen! Uitzetten in productie
+
+log:
+  level: DEBUG
+
+entryPoints:
+  web:
+    address: ":80"
+
+  websecure:
+    address: ":443"
+
+certificatesResolvers:
+  letsencrypt:
+    acme:
+      email: jimmywytynck@gmail.com  # Vervang door je eigen e-mail
+      storage: /letsencrypt/acme.json
+      httpChallenge:
+        entryPoint: web  # Let’s Encrypt gebruikt poort 80 om te verifiëren
+
+providers:
+  docker:
+    endpoint: "unix:///var/run/docker.sock"
+    exposedByDefault: false
