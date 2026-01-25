@@ -1,7 +1,0 @@
-stap 0 vragen of het een dm is
-stap 1 api binnen halen
-stap 2 de api veranderen ineen json
-stap 3 kiezen uit de eerste keuze zij en de api adres veranderen
-stap 4 de nieuwe api inladen als json
-stap 5 de nieuwe keuze menu genereren en hier de item selecteren dat je wil bezien
-stap 6 de dat in laden als deze er is 
