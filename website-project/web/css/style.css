@@ -112,6 +112,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-image: url(../assets/Grote-banner.jpg);
+    height: 2.5rem;
 }
 
 nav{
