@@ -1,0 +1,122 @@
+{
+    "Clanrat": {
+        "name":"Clanrat",
+        "price":"€41,00",
+        "image":{
+            "src":"./assets/img/clanrat.jpg",
+            "alt":"clanrat",
+            "caption":"© warhammer"
+        },
+        "description":"Clanrats zijn de ongewassen massa's van de verschillende Skaven Clans. Ze vechten met wat voor roestige speren en messen ze ook kunnen vinden, evenals hun eigen klauwen en tanden. Alleen wanneer ze voldoende worden gemotiveerd door angst, honger of een overweldigend voordeel kunnen ze worden vertrouwd om vooruitgang te boeken – maar wanneer ze dat doen, kunnen ze hele legers reduceren tot hopen aangeknaagde botten. Deze set van meermaals te assembleren plastic miniaturen bevat maar liefst 20 Clanrats, talrijke maar ondergeschikte hordes van Skaven krijgers. Hun assortiment aan roestige wapens laat hun andere hand vrij om een schild te dragen. Twee van de 20 miniaturen kunnen worden opgebouwd als..."
+    },
+    "Boormachine": {
+        "name":"Boormachine",
+        "price":"€26,00",
+        "image":{
+            "src":"./assets/img/drill.jpg",
+            "alt":"drill",
+            "caption":"© warhammer"
+        },
+        "description":"Wil je kleine gaatjes boren in de lopen van je miniatuurgeweren zodat ze eruitzien alsof ze miniatuurkogels kunnen afvuren? Wil je experimenteren met het vastpinnen van moeilijk te bevestigen onderdelen tijdens het bouwen en aanpassen van je miniaturen? Een betrouwbare boor, geschikt voor gebruik op miniaturen, kan op allerlei manieren worden gebruikt. Het ontwerpteam van Citadel Tools stond te popelen om de uitdaging aan te gaan om de hobbyboor opnieuw te ontwerpen. Ze wilden deze makkelijker en veiliger maken door een aantal ontwerpkenmerken te integreren:"
+    },
+    "echoesOfDoom": {
+        "name":"Echoes of Doom",
+        "price":"€210,00",
+        "image":{
+            "src":"./assets/img/echoes-of-doom.jpg",
+            "alt":"echoes",
+            "caption":"© warhammer"
+        },
+        "description":"Nadat Grey Seer Skrittat een succesvolle aanval had geleid op de Sylvaneth-enclave van Neos, verzamelt de Lady of Vines een strijdmacht om de dieven te straffen en de gestolen zielenzaden terug te halen. De Sylvaneth halen de Skaven in bij de Adamantine Chain, net buiten de Skaven-warrenkstad Chakrik's Folly, en maken zich klaar om een bloedige wraak te nemen."
+    },
+    "Corpsegrass": {
+        "name":"Mordian Corpsegrass",
+        "price":"€12,00",
+        "image":{
+            "src":"./assets/img/mordian-corpsegrass.jpg",
+            "alt":"Corpsegrass",
+            "caption":"© warhammer"
+        },
+        "description":"De ontberingen van de strijd, hete klimaten en andere barre omgevingen eisen hun tol van de lokale flora, waarbij veel voorheen groene velden door passerende legers zijn gereduceerd tot droog stro. Toch houden veel planten vast aan het leven en kunnen ze vaak worden aangetroffen rond een leger dat door bijzonder dorre gebieden trekt.Breng kleur en detail aan op de bases van je legers met de Mordian Corpsegrass Tufts van Citadel Colour. Hiermee kun je in enkele minuten je leger voorzien van natuurlijk ogende bases. De plukjes hebben een sterke zelfklevende achterkant en hechten zich gemakkelijk aan verschillende verfsoorten en basismaterialen. Elk plukje kan eenvoudig worden geknipt of gescheurd in verschillende vormen naar behoefte en is perfect voor legers die zijn ingezet in ruige, droge omgevingen."
+    },
+    "verfGereedschap": {
+        "name":"Verf en Gereedschap",
+        "price":"€35,00",
+        "image":{
+            "src":"./assets/img/paints+tools-set.jpg",
+            "alt":"verf+gereedschap",
+            "caption":"© warhammer"
+        },
+        "description":"Het bouwen en schilderen van Citadel-miniaturen is een leuke en spannende manier om je bezig te houden met de Warhammer-hobby, en naarmate je meer ervaring opdoet, wordt het alleen maar leuker. Om te beginnen heb je een paar gereedschappen en een set verf nodig, en deze doos bevat de basisbenodigdheden die de kern zullen vormen van jouw Warhammer-hobbygereedschapskist."
+    },
+    "3dprints": {
+        "name":"3D Prints",
+        "price":"Prijs afhankelijk van opties",
+        "image":{
+            "src":"./assets/img/personalized-3dprints.jpg",
+            "alt":"3D Prints",
+            "caption":"© Nathan Lambes (Thingiverse)"
+        },
+        "description":"Gepersonaliseerde 3D-prints bieden een unieke manier om je aangepaste miniatuurlontwerpen tot leven te brengen."
+    },
+    "pleageclawCatapult": {
+        "name":"Plagueclaw Catapult",
+        "price":"€34,00",
+        "image":{
+            "src":"./assets/img/pleageclaw-catapult.jpg",
+            "alt":"catapult",
+            "caption":"© warhammer"
+        },
+        "description":"Terwijl Clan Skryre de kunst van het afvuren van gloedvolle ballen van warpbliksem perfectioneert, zijn de Plague Monks van Clan Pestilens druk bezig met het afvuren van giftige modder uit hun Plagueclaws, die langeafstandsdood toevoegen aan hun arsenaal. Het Plagueclaw-model bestaat uit een enorm houten frame en verschillende wielen van uiteenlopende grootte, waarvan het hout merkbaar gammel en wankel is. Het is in elkaar gezet met talloze metalen platen en klinknagels, en afgesteld met tandwielen en schroeven. De katapult zelf is gemaakt van een grote houten balk, waarvan het uiteinde een metalen klauw bevat die een hoop giftige modder vasthoudt, terwijl.."
+    },
+    "screamingBell": {
+        "name":"Screaming Bell",
+        "price":"€62,50",
+        "image":{
+            "src":"./assets/img/screaming-bell.jpg",
+            "alt":"bell",
+            "caption":"© warhammer"
+        },
+        "description":"De Skaven Schreeuwende Bel is een groot pronkstuk voor een Skaven-verzameling. Rotsblokken, die stevig vastgebonden zijn, worden omhoog gedragen op wankele, gammel houten balken. Daarboven rijst een stenen boog, die fungeert als het frame voor een enorme bel. Een Grey Seer staat bovenop en de bel zelf wordt getrokken aan een ketting door een Rat Ogre. Dit meerwielige apparaat"
+    },
+    "doomwheel": {
+        "name":"Doomwheel",
+        "price":"€34,00",
+        "image":{
+            "src":"./assets/img/skaven-doomwheel.jpg",
+            "alt":"doomwheel",
+            "caption":"© warhammer"
+        },
+        "description":"Weinige apparaten vangen de combinatie van wetenschap, toverkunst en de pure onmenselijke vindingrijkheid van de Skaven zo goed als de infernale oorlogsmachine die bekendstaat als het Doomwheel. Het Doomwheel zoeft snel over het slagveld en ontketent krachtige warpbliksemstralen die de nabijgelegen vijanden tot verschrompelde zwartheid verteren, terwijl het grote, ijzerversterkte wiel alles verplettert wat zich op zijn pad bevindt."
+    },
+    "Stormfiends": {
+        "name":"Stormfiends",
+        "price":"€62,50",
+        "image":{
+            "src":"./assets/img/skaven-stormfiends.jpg",
+            "alt":"Stormfiends",
+            "caption":"© warhammer"
+        },
+        "description":"De nieuwste creaties uit de krankzinnige laboratoria van Clan Skryre, Stormfiends zijn kolossale bruten die uit een verscheidenheid aan lichaamsdelen in elkaar zijn gezet. Bewapend met een dodelijke reeks experimentele wapens, kunnen ze door dicht opeengepakte vijanden banen, of vijandelijke charges in hun eentje stoppen met verwoestende vuurstormen."
+    },
+    "verminlordCorruptor": {
+        "name":"Verminlord Corruptor",
+        "price":"€93,00",
+        "image":{
+            "src":"./assets/img/skaven-Verminlord Corruptor.jpg",
+            "alt":"Verminlord",
+            "caption":"© warhammer"
+        },
+        "description":"Horribele voorbeelden van pure pestilentie die vorm hebben gekregen, Verminlord Corruptors maken hun naam waar en bestaan alleen om te verwoesten en te corrumperen. Grote, krachtige krijgers die in staat zijn de meeste vijanden uit elkaar te scheuren, zelfs voordat hun verwerpelijke pestmagie vat op hen krijgt, zij hebben absolute macht over hun ondergeschikten in de Clan Pestilens. Hun pestreaper-sikkels infecteren tegenstanders zelfs bij de kleinste verwonding – de strijd aangaan met deze meest sluwe, meest listige, meest boosaardige van de Skaven is je eigen stinkende, zieke doodsvonnis ondertekenen."
+    },
+    "Schedels": {
+        "name":"Schedels",
+        "price":"€26,00",
+        "image":{
+            "src":"./assets/img/skulls.jpg",
+            "alt":"skulls",
+            "caption":"© warhammer"
+        },
+        "description":"Je hebt misschien een gemeenschappelijk thema opgemerkt tussen modellen en scenerystukken uit de Warhammer 40.000 en Warhammer Age of Sigmar reeksen – schedels. Ze zijn overal, versieren de muren van Khornate kastelen en hangen aan de riemen van angstaanjagende krijgers. Maar wij denken dat er niet genoeg schedels zijn..."
+    }
+}

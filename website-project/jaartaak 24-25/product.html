@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        The Warlord's Forge - Product
+    </title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./js/productScript.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="./shopIndex.html">Home</a></li>
+            <li><a href="./shop.html">Winkel</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./klanten.html">klanten</a></li>
+            <li>
+                <select name="products" id="product-dropdown">
+                    <option value="Clanrat">Clanrat</option>
+                    <option value="Boormachine">Boormachine</option>
+                    <option value="echoesOfDoom">Echoes of Doom</option>
+                    <option value="Corpsegrass">mordian Corpsegrass</option>
+                    <option value="verfGereedschap">Verf en Gereedschap</option>
+                    <option value="3dprints">3D Prints</option>
+                    <option value="pleageclawCatapult">pleageclaw catapult</option>
+                    <option value="screamingBell">screaming Bell</option>
+                    <option value="doomwheel">Doomwheel</option>
+                    <option value="Stormfiends">Stormfiends</option>
+                    <option value="verminlordCorruptor">Verminlord Corruptor</option>
+                    <option value="Schedels">Schedels</option>
+                </select>
+            </li>
+            <li>            
+                <section class="zoekSection">
+                    <form action="#" class="zoekForm">
+                        <input type="search" name="zoeken" id="zoeken" placeholder="zoek...">
+                        <button type="submit" class="zoekButton">zoek</button>
+                    </form>
+                </section>
+            </li>
+        </ul>
+        <section class="right-section">
+            <button class="shoppingcart">
+                <img src="./assets/img/cart-line-icon.png" alt="Winkelmandje" width="28px" height="25px">
+                <span class="quantity">0</span>
+            </button>
+        </section>
+    </nav>
+    <header>
+        <figure>
+            <a href="./index.html"><img src="./assets/img/shoplogo.png" alt="Logo"></a>
+        </figure>
+    </header>
+    <main id="product-page">
+
+    </main>
+    <aside>
+        <form action="#" method="post" class="contactform">
+            <h2>Geef jou revieuw</h2>
+            <label for="name">Naam<span>*</span></label>
+            <input type="text" name="naam" id="name" required><br>
+            <label for="message">Bericht<span>*</span></label>
+            <textarea name="message" id="message" rows="6"></textarea><br>
+            <button type="submit" class="button">Verzenden</button>
+        </form>
+    </aside>
+    <footer>
+        <ul class="socials">
+            <li>
+                <a href="#">
+                    <img src="./assets/img/iconfacebook.png" alt="Facebook-logo" width="50px">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./assets/img/iconinstagram.png" alt="Instagram-logo" width="50px">
+                </a>
+            </li>
+            <li>
+                <a href="./contact.html">
+                    The_Warlords_Forge@test.be
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

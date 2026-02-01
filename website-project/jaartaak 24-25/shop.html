@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        The Warlord's Forge - Winkel
+    </title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="./shopIndex.html">Home</a></li>
+            <li><a href="./shop.html" class="active">Winkel</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./klanten.html">klanten</a></li>
+            <li>            
+                <section class="zoekSection">
+                    <form action="#" class="zoekForm">
+                        <input type="search" name="zoeken" id="zoeken" placeholder="zoek...">
+                        <button type="submit" class="zoekButton">zoek</button>
+                    </form>
+                </section>
+            </li>
+        </ul>
+        <section class="right-section">
+            <button class="shoppingcart">
+                <img src="./assets/img/cart-line-icon.png" alt="Winkelmandje" width="28px" height="25px">
+                <span class="quantity">0</span>
+            </button>
+        </section>
+    </nav>
+    <header>
+        <figure>
+            <a href="./index.html"><img src="./assets/img/shoplogo.png" alt="Logo"></a>
+        </figure>
+    </header>
+    <main>
+        <h1>The Warlord's Forge - Winkel</h1>
+        <h2>Beschikbare Producten</h2>
+        <section class="shop">
+            <section class="product-item">
+                <h2>Clanrat</h2>
+                <figure class="clanrat">
+                    <a href="./product.html?product=Clanrat" name="clanrat">
+                        <img src="./assets/img/clanrat.jpg" alt="Clanrat">
+                        <figcaption>
+                            <input type="checkbox" class="heart-checkbox" id="heart-checkbox-1">
+                            <label for="heart-checkbox-1" class="heart">&#10084;</label>
+                            &copy; warhammer
+                        </figcaption>
+                    </a>
+                </figure>
+                <p>Clanrats zijn de basisinfanterie <br> van de Skaven, een ratachtig ras <br> in het Warhammer-universum.</p>
+                <section class="bestellen">
+                    <p class="price">€41,00</p>
+                    <button class="bestel" onclick="addToCart('./assets/img/clanrat.jpg','Clanrat',41.00)">bestellen</button>
+                </section>
+            </section>
+            <section class="product-item">
+                <h2>Boormachine</h2>
+                <figure class="drill">
+                    <a href="./product.html?product=Boormachine" name="drill">
+                        <img src="./assets/img/drill.jpg" alt="Boormachine">
+                        <figcaption>
+                            <input type="checkbox" class="heart-checkbox" id="heart-checkbox-2">
+                            <label for="heart-checkbox-2" class="heart">&#10084;</label>
+                            &copy; warhammer
+                        </figcaption>
+                    </a>
+                </figure>
+                <p>Boort kleine gaatjes in de lopen <br> van miniatuurwapens en bevestigt <br> kleine onderdelen stevig.</p>
+                <section class="bestellen">
+                    <p class="price">€26,00</p>
+                    <button class="bestel" onclick="addToCart('./assets/img/drill.jpg','Boormachine',26.00)">bestellen</button>
+                </section>
+            </section>
+            <section class="product-item">
+                <h2>Echoes of Doom</h2>
+                <figure class="echoes">
+                    <a href="./product.html?product=echoesOfDoom" name="echoes">
+                        <img src="./assets/img/echoes-of-doom.jpg" alt="Echoes of Doom">
+                        <figcaption>
+                            <input type="checkbox" class="heart-checkbox" id="heart-checkbox-3">
+                            <label for="heart-checkbox-3" class="heart">&#10084;</label>
+                            &copy; warhammer
+                        </figcaption>
+                    </a>
+                </figure>
+                <p>Echoes of Doom is een strijddoos uit de <br> Warhammer Age of Sigmar-serie, <br> met een epische botsing tussen <br> de wraakzuchtige Sylvaneth en de sluwe Skaven.</p>
+                <section class="bestellen">
+                    <p class="price">€210,00</p>
+                    <button class="bestel" onclick="addToCart('./assets/img/echoes-of-doom.jpg','Echoes of Doom',210.00)">bestellen</button>
+                </section>
+            </section>
+            <section class="product-item">
+                <h2>Corpsegrass</h2>
+                <figure class="corpsegrass">
+                    <a href="./product.html?product=Corpsegrass" name="corpsegrass">
+                        <img src="./assets/img/mordian-corpsegrass.jpg" alt="Corpsegrass">
+                        <figcaption>
+                            <input type="checkbox" class="heart-checkbox" id="heart-checkbox-4">
+                            <label for="heart-checkbox-4" class="heart">&#10084;</label>
+                            &copy; warhammer
+                        </figcaption>
+                    </a>
+                </figure>
+                <p>Corpsegrass is een populaire basismateriaal <br> dat je miniaturen een donkere <br> en grimmige uitstraling geeft, <br> perfect voor ondoden of chaotische slagvelden.</p>
+                <section class="bestellen">
+                    <p class="price">€12,00</p>
+                    <button class="bestel" onclick="addToCart('./assets/img/mordian-corpsegrass.jpg', 'Corpsegrass' , 12.00 )">bestellen</button>
+                </section>
+            </section>
+            <section class="product-item">
+                <h2>Verf+Gereedschap</h2>
+                <figure class="paints+tools">
+                    <a href="./product.html?product=verfGereedschap" name="paints+tools">
+                        <img src="./assets/img/paints+tools-set.jpg" alt="Verf+Gereedschap">
+                        <figcaption>
+                            <input type="checkbox" class="heart-checkbox" id="heart-checkbox-5">
+                            <label for="heart-checkbox-5" class="heart">&#10084;</label>
+                            &copy; warhammer
+                        </figcaption>
+                    </a>
+                </figure>
+                <p>De Verf + Gereedschap set <br> is het perfecte startpakket <br> voor iedereen die wil beginnen <br> met miniatuurschilderen.</p>
+                <section class="bestellen">
+                    <p class="price">€35,00</p>
+                    <button class="bestel" onclick="addToCart('./assets/img/paints+tools-set.jpg','paints+tools',35.00)">bestellen</button>
+                </section>
+            </section>
+            <section class="product-item">
+                <h2>3D Prints</h2>
+                <figure class="3dprints">
+                    <a href="./product.html?product=3dprints" name="3dprints">
+                        <img src="./assets/img/personalized-3dprints.jpg" alt="3D Prints">
+                        <figcaption>
+                            <input type="checkbox" class="heart-checkbox" id="heart-checkbox-6">
+                            <label for="heart-checkbox-6" class="heart">&#10084;</label>
+                            &copy; Nathan Lambes (Thingiverse)
+                        </figcaption>
+                    </a>
+                </figure>
+                <p>Gepersonaliseerde 3D-prints <br> bieden een unieke manier <br> om je aangepaste miniatuurlontwerpen <br> tot leven te brengen.</p>
+                <section class="bestellen">
+                    <p class="price">Prijs afhankelijk van opties</p>
+                    <button class="bestel" onclick="showContactPrompt()">bestellen</button>
+                </section>
+            </section>
+            <section class="product-item">
+                <h2>Plagueclaw Catapult</h2>
+                <figure class="catapult">
+                    <a href="./product.html?product=pleageclawCatapult" name="catapult">
+                        <img src="./assets/img/pleageclaw-catapult.jpg" alt="Catapult">
+                        <figcaption>
+                            <input type="checkbox" class="heart-checkbox" id="heart-checkbox-7">
+                            <label for="heart-checkbox-7" class="heart">&#10084;</label>
+                            &copy; warhammer
+                        </figcaption>
+                    </a>
+                </figure>
+                <p>De Plagueclaw is een vernietigend <br> oorlogswapen uit het Skaven-arsenaal <br> in het Warhammer Age of Sigmar-universum.</p>
+                <section class="bestellen">
+                    <p class="price">€34,00</p>
+                    <button class="bestel" onclick="addToCart('./assets/img/pleageclaw-catapult.jpg','Catapult', 34.00 )">bestellen</button>
+                </section>
+            </section>
+            <section class="product-item">
+                <h2>Screaming Bell</h2>
+                <figure class="bell">
+                    <a href="./product.html?product=screamingBell" name="bell">
+                        <img src="./assets/img/screaming-bell.jpg" alt="Bell">
+                        <figcaption>
+                            <input type="checkbox" class="heart-checkbox" id="heart-checkbox-8">
+                            <label for="heart-checkbox-8" class="heart">&#10084;</label>
+                            &copy; warhammer
+                        </figcaption>
+                    </a>
+                </figure>
+                <p>De Screaming Bell is een iconisch <br> en angstaanjagend oorlogswapen <br> in het Skaven-leger uit <br> het Warhammer-universum.</p>
+                <section class="bestellen">
+                    <p class="price">€62,50</p>
+                    <button class="bestel" onclick="addToCart('./assets/img/screaming-bell.jpg', 'Bell' , 62.50)">bestellen</button>
+                </section>
+            </section>
+            <section class="product-item">
+                <h2>Doomwheel</h2>
+                <figure class="doomwheel">
+                    <a href="./product.html?product=doomwheel" name="doomwheel">
+                        <img src="./assets/img/skaven-doomwheel.jpg" alt="Doomwheel">
+                        <figcaption>
+                            <input type="checkbox" class="heart-checkbox" id="heart-checkbox-9">
+                            <label for="heart-checkbox-9" class="heart">&#10084;</label>
+                            &copy; warhammer
+                        </figcaption>
+                    </a>
+                </figure>
+                <p>De Doomwheel is een snel <br> en dodelijk oorlogswapen <br> dat door de Skaven wordt gebruikt <br> in het Warhammer-universum.</p>
+                <section class="bestellen">
+                    <p class="price">€34,00</p>
+                    <button class="bestel" onclick="addToCart('./assets/img/skaven-doomwheel.jpg', 'Doomwheel' , 34.00)">bestellen</button>
+                </section>
+            </section>
+            <section class="product-item">
+                <h2>Stormfiends</h2>
+                <figure class="stormfiends">
+                    <a href="./product.html?product=Stormfiends" name="stormfiends">
+                        <img src="./assets/img/skaven-stormfiends.jpg" alt="Stormfiends">
+                        <figcaption>
+                            <input type="checkbox" class="heart-checkbox" id="heart-checkbox-10">
+                            <label for="heart-checkbox-10" class="heart">&#10084;</label>
+                            &copy; warhammer
+                        </figcaption>
+                    </a>
+                </figure>
+                <p>Stormfiends zijn formidabele <br> en angstaanjagende gevechtseenheden <br> in het Skaven-leger in <br> het Warhammer-universum.</p>
+                <section class="bestellen">
+                    <p class="price">€62,50</p>
+                    <button class="bestel" onclick="addToCart('./assets/img/skaven-stormfiends.jpg','Stormfiends', 62.50 )">bestellen</button>
+                </section>
+            </section>
+            <section class="product-item">
+                <h2>Verminlord Corruptor</h2>
+                <figure class="verminlord">
+                    <a href="./product.html?product=verminlordCorruptor" name="verminlord">
+                        <img src="./assets/img/skaven-verminlord corruptor.jpg" alt="Verminlord">
+                        <figcaption>
+                            <input type="checkbox" class="heart-checkbox" id="heart-checkbox-11">
+                            <label for="heart-checkbox-11" class="heart">&#10084;</label>
+                            &copy; warhammer
+                        </figcaption>
+                    </a>
+                </figure>
+                <p>De Verminlord is een angstaanjagende <br> en krachtige Daemon Lord <br> binnen de Skaven-hiërarchie in <br> het Warhammer-universum.</p>
+                <section class="bestellen">
+                    <p class="price">€93,00</p>
+                    <button class="bestel" onclick="addToCart('./assets/img/skaven-verminlord corruptor.jpg','verminlord', 93.00)">bestellen</button>
+                </section>
+            </section>
+            <section class="product-item">
+                <h2>Schedels</h2>
+                <figure class="skulls">
+                    <a href="./product.html?product=Schedels" name="skulls">
+                        <img src="./assets/img/skulls.jpg" alt="Schedels">
+                        <figcaption>
+                            <input type="checkbox" class="heart-checkbox" id="heart-checkbox-12">
+                            <label for="heart-checkbox-12" class="heart">&#10084;</label>
+                            &copy; warhammer
+                        </figcaption>
+                    </a>
+                </figure>
+                <p>Schedels zijn een veelzijdig <br> en essentieel basismateriaal <br> voor miniatuurliefhebbers in <br> het Warhammer-universum.</p>
+                <section class="bestellen">
+                    <p class="price">€26,00</p>
+                    <button class="bestel" onclick="addToCart('./assets/img/skulls.jpg','Schedels', 26.00)">bestellen</button>
+                </section>
+            </section>
+        </section>
+    </main>
+    <aside>
+        <article class="Winkelwagen">
+            <h1>Winkelwagen</h1>
+            <span id="totalItems">Aantal items: 0</span>
+            <ul class="Card" id="cart">
+                <li class="products">
+                    <figcaption class="product">
+                        <img class="productImg" src="${item.imgUrl}" width="50px" height="50px" ></img>
+                        <h2 class="productName"></h2>
+                        <h3 class="productPrice"></h3>
+                        <p class="productQuantity"><input value="1" name=""></p>
+                        <button class="button" id="minusOne" type="button" onclick="decreaseQuantity('${item.productName}')">-</button>
+                        <button class="button" id="addOne" type="button" onclick="increaseQuantity('${item.productName}')">+</button>
+                        <button class="button" id="remove" class="button" onclick="removeCart()">verwijder</button>
+                    </figcaption>
+                </li>
+            </ul>
+            <span id="cartTotal">Totaal: €0.00</span>
+            <button class="bestel" type="button" onclick="Bestellen('${item.productName}')">Bestellen</button>
+        </article>
+    </aside>
+    <footer>
+        <ul class="socials">
+            <li>
+                <a href="#">
+                    <img src="./assets/img/iconfacebook.png" alt="Facebook-logo" width="50px">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./assets/img/iconinstagram.png" alt="Instagram-logo" width="50px">
+                </a>
+            </li>
+            <li>
+                <a href="./contact.html">
+                    The_Warlords_Forge@test.be
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

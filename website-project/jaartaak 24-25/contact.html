@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        The Warlord's Forge - Contact
+    </title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/map.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="./shopIndex.html">Home</a></li>
+            <li><a href="./shop.html">Winkel</a></li>
+            <li><a href="./contact.html" class="active">Contact</a></li>
+            <li><a href="./klanten.html">klanten</a></li>
+            <li>            
+                <section class="zoekSection">
+                    <form action="#" class="zoekForm">
+                        <input type="search" name="zoeken" id="zoeken" placeholder="zoek...">
+                        <button type="submit" class="zoekButton">zoek</button>
+                    </form>
+                </section>
+            </li>
+        </ul>
+        <section class="right-section">
+            <button class="shoppingcart">
+                <img src="./assets/img/cart-line-icon.png" alt="Winkelmandje" width="28px" height="25px">
+                <span class="quantity">0</span>
+            </button>
+        </section>
+    </nav>
+    <header>
+        <figure>
+            <a href="./index.html"><img src="./assets/img/shoplogo.png" alt="Logo"></a>
+        </figure>
+    </header>
+    <main>
+        <h1>The Warlord's Forge - Contact</h1>
+        <div id="map"></div>
+    </main>
+    <aside>
+        <form action="#" method="post" class="contactform">
+            <label for="name">Naam<span>*</span></label>
+            <input type="text" name="naam" id="name" required><br>
+            <label for="email">E-mail<span>*</span></label>
+            <input type="email" name="email" id="email" required><br>
+            <label for="message">Bericht<span>*</span></label>
+            <textarea name="message" id="message" rows="6" required></textarea><br>
+            <button type="submit" class="button">Verzenden</button>
+        </form>
+    </aside>
+    <footer>
+        <ul class="socials">
+            <li>
+                <a href="#">
+                    <img src="./assets/img/iconfacebook.png" alt="Facebook-logo" width="50px">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./assets/img/iconinstagram.png" alt="Instagram-logo" width="50px">
+                </a>
+            </li>
+            <li>
+                <a href="./contact.html">
+                    The_Warlords_Forge@test.be
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
